@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Arthur</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>Formulário de Inscrição</header>
+    <div class="barrinha">
+      <div class="parte_nome">
+        <p>Nome</p>
+        <div class="parte_numero">
+          <span>1</span>
+        </div>
+      </div>
+      <div class="parte_nome">
+        <p>Endereço</p>
+        <div class="parte_numero">
+          <span>2</span>
+        </div>
+      </div>
+      <div class="parte_nome">
+        <p>Contato</p>
+        <div class="parte_numero">
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="formulario">
+      <form action="#" id="form">
+        <div class="pagina pagina_informacoes">
+          <div class="titulo">
+            <h4>Informações básicas</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Primeiro nome</label>
+            </div>
+            <input type="text" name="nome" id="primeiroNome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Sobrenome</label>
+            </div>
+            <input type="text" name="sobrenome" id="sobrenome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">CPF</label>
+            </div>
+            <input type="text" name="sobrenome" id="cpf">
+          </div>
+          <div class="campo">
+            <button class="primeiro_proximo proximo" onclick="validarCPF()">Próximo</button>
+          </div>
+        </div>
+
+        <div class="pagina">
+          <div class="titulo">
+            <h4>Localidade</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="cidade">Cidade</label>
+            </div>
+            <input type="text" id="cidade">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="celular">Bairro</label>
+            </div>
+            <input type="text" id="bairro">
+          </div>
+          <div class="campo">
+            <div class="campo botoes">
+              <button class="voltar_1 voltar">Voltar</button>
+              <button class="proximo_1 proximo">Próximo</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pagina">
+          <div class="titulo">
+            <h4>Contato</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="email">Email</label>
+            </div>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="telefone">Celular</label>
+            </div>
+            <input type="tel" name="telefone" pattern="\d*" maxlength="11" id="telefone">
+          </div>
+          <div class="campo">
+            <div class="campo botoes">
+              <button class="voltar_2 voltar">Voltar</button>
+              <button class="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  </html>
